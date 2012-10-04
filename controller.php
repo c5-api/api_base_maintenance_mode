@@ -4,7 +4,7 @@ class ApiBaseMaintenanceModePackage extends Package {
 
 	protected $pkgHandle = 'api_base_maintenance_mode';
 	protected $appVersionRequired = '5.6.0';
-	protected $pkgVersion = '0.9';
+	protected $pkgVersion = '0.91';
 
 	public function getPackageName() {
 		return t("Api:Base:Maintenance Mode");
