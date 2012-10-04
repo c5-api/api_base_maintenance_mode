@@ -16,9 +16,9 @@ class MaintenanceModeApiRouteController extends ApiRouteController {
 				}
 
 			
-			default: //BAD REQUEST
-				$this->setCode(400);
-				$this->respond();
+			default: //METHOD NOT ALLOWED
+				$this->setCode(405);
+				$this->respond(array('error' => 'Method Not Allowed'));
 		}
 	}
 }
