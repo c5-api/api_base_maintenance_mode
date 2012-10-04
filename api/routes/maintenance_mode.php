@@ -8,8 +8,8 @@ class MaintenanceModeApiRouteController extends ApiRouteController {
 				return Config::get('SITE_MAINTENANCE_MODE');
 			
 			default: //BAD REQUEST
-				$this->setCode(400);
-				$this->respond();
+				$this->setCode(405);
+				$this->respond(array('error' => 'Method Not Allowed'));
 		}
 	}
 }
